@@ -1,0 +1,24 @@
+{
+  "name": "maxm",
+  "version": "0.0.1",
+  "description": "this is a trial app where i try to learn about node and postgres,the features are not fixed so i will be adding as many features as i can to keep my self on good progress as i learn new stuff hhhhh good luck to me",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r esm server.js",
+    "server": "nodemon -r esm server.js"
+  },
+  "repository": "https://github.com/hirwahabakaramojules/maxm.git",
+  "author": "hirwa habakaramo jules",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "pg": "^8.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
