@@ -5,7 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "node -r esm server.js",
-    "server": "nodemon -r esm server.js"
+    "clean": "rimraf dist",
+    "server": "nodemon -r esm server.js",
+    "build": "npm run migrations && npm start",
+    "migrations": "npm run down && npm run up",
+    "down": "node -r esm ./db/downMigration.js",
+    "up": "node -r esm ./db/upMigrations.js"
   },
   "repository": "https://github.com/hirwahabakaramojules/maxm.git",
   "author": "hirwa habakaramo jules",
