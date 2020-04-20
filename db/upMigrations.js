@@ -3,7 +3,7 @@ import pool from "../config/config";
 pool.on("", () => console.log("migrating up and creating neccessary tables"));
 
 const tables = () => {
-  const todoTables = `CREATE TABLE IF NOT EXISTS TODO (
+  const todoTables = `CREATE TABLE IF NOT EXISTS todo (
         id SERIAL PRIMARY KEY UNIQUE,
         title TEXT NOT NULL ,
         description TEXT NOT NULL
